@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calmly: Color by Number - relaxing paint by number art for Android</title>
+<meta name="description" content="Calmly is a relaxing paint-by-number colouring app. Tap a number, watch the colour flow. Famous paintings, animals, mandalas and a new picture every day. Free on Android.">
+<meta property="og:title" content="Calmly: Color by Number">
+<meta property="og:description" content="Tap. Fill. Breathe. Relaxing paint by number art for Android.">
+<meta property="og:image" content="https://trunghieuvn.github.io/colorbynumber/assets/og.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Google Analytics 4 (web). Property for the landing page; app events go through Firebase. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CALMLYWEB"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-CALMLYWEB',{anonymize_ip:true});
+function track(n,p){try{gtag('event',n,p||{})}catch(e){}}</script>
+</head>
+<body>
+<header><div class="wrap"><img src="assets/icon-192.png" alt=""><b>Calmly</b>
+<nav><a href="#features">Features</a><a href="#screens">Screens</a><a href="#premium">Premium</a><a href="#faq">FAQ</a><a href="support.html">Support</a></nav></div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div>
+    <h1>Tap a number.<br><span>Watch it bloom.</span></h1>
+    <p>Calmly is a paint-by-number colouring book that fits in your pocket. No timer, no pressure - just you, a picture and a palette from 1 to 20.</p>
+    <div class="badges">
+      <a class="btn coral" id="play" href="https://play.google.com/store/apps/details?id=vn.fighttech.colorbynumber" onclick="track('play_click',{location:'hero'})">
+        <svg width="20" height="22" viewBox="0 0 24 26" fill="none"><path d="M1 2.2v21.6c0 .9 1 1.4 1.7.9l12.6-10.8L2.7 1.3C2 .8 1 1.3 1 2.2Z" fill="#fff"/><path d="m18.4 10.3-3.1 3.6 3.1 3.6 4.4-2.5c1-.6 1-2 0-2.6l-4.4-2.1Z" fill="#fff" opacity=".85"/></svg>
+        Get it on Google Play</a>
+      <small>Open testing - Android 8.0+</small>
+    </div>
+    <div class="chips"><span>🎨 13 pictures at launch</span><span>🖼️ Van Gogh · Hokusai · Monet · Klimt</span><span>📴 Works offline</span><span>🔒 No account</span></div>
+  </div>
+  <div class="phone"><div class="blob"></div><img src="assets/shot2.webp" alt="Calmly colouring The Starry Night, zoomed in with crisp numbered regions"></div>
+</section>
+
+<section id="features">
+  <h2>Made to feel good in the hand</h2>
+  <p class="sub">The little things that make colouring relaxing instead of fiddly.</p>
+  <div class="grid">
+    <div class="card"><div class="ic" style="background:#FFE3D6">👆</div><h3>Smart taps</h3><p>Tiny region? Calmly finds the one you meant, even a few pixels off.</p></div>
+    <div class="card"><div class="ic" style="background:#DDF2EF">🔍</div><h3>Crisp at any zoom</h3><p>Pinch into a 900-region masterpiece and every outline and number stays sharp.</p></div>
+    <div class="card"><div class="ic" style="background:#E9E3F8">💡</div><h3>Hints when stuck</h3><p>A hint zooms to the next region and fills it for you. Three free, unlimited with Premium.</p></div>
+    <div class="card"><div class="ic" style="background:#FCEFD0">📅</div><h3>Daily picture</h3><p>A new artwork every day - a small calm ritual.</p></div>
+    <div class="card"><div class="ic" style="background:#FBE0E5">🎬</div><h3>Replay & share</h3><p>Finish a picture and watch it re-paint itself, then save or share it.</p></div>
+    <div class="card"><div class="ic" style="background:#DCEAF8">📴</div><h3>Offline, private</h3><p>Everything is on your phone. No sign-up, no personal data collected.</p></div>
+  </div>
+</section>
+
+<section id="screens">
+  <h2>Screens</h2>
+  <p class="sub">Warm cream, soft pastels, rounded type. Calm by design.</p>
+  <div class="shots">
+    <img src="assets/shot1.webp" alt="Colouring Little Fox"><img src="assets/shot3.webp" alt="Library"><img src="assets/shot2.webp" alt="Zoomed Starry Night"><img src="assets/shot4.webp" alt="Completed picture"><img src="assets/shot5.webp" alt="Daily pictures"><img src="assets/shot6.webp" alt="Famous paintings"><img src="assets/shot7.webp" alt="My Works"><img src="assets/shot8.webp" alt="Premium">
+  </div>
+</section>
+
+<section id="premium">
+  <h2>Free to colour. Premium if you want more.</h2>
+  <p class="sub">Every picture, unlimited hints and no ads. Prices are shown in your local currency inside the app.</p>
+  <div class="plans">
+    <div class="plan"><h3>Monthly</h3><div class="price">≈ $2.99</div><p>per month · cancel anytime</p></div>
+    <div class="plan best"><span class="tag">BEST VALUE</span><h3>Yearly</h3><div class="price">≈ $14.99</div><p>per year · ≈ $1.25 / month</p></div>
+    <div class="plan"><h3>Lifetime</h3><div class="price">≈ $29.99</div><p>pay once, keep forever</p></div>
+  </div>
+  <p class="sub" style="margin-top:18px;font-size:14px">Subscriptions are billed through Google Play and renew automatically until cancelled in your Play subscriptions. <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+</section>
+
+<section id="faq" class="faq">
+  <h2>FAQ</h2>
+  <details><summary>Is it really free?</summary><p>Yes. Most pictures, hints and the daily picture are free. Premium unlocks the biggest masterpieces and unlimited hints.</p></details>
+  <details><summary>Does it need internet?</summary><p>No. Pictures ship inside the app. Internet is only used for purchases and anonymous crash/usage statistics.</p></details>
+  <details><summary>Where do the pictures come from?</summary><p>Public-domain paintings from Wikimedia Commons and CC0 illustrations. Credits are listed in the app under More › Artwork credits.</p></details>
+  <details><summary>iPhone?</summary><p>Android first. An iOS version is planned.</p></details>
+  <details><summary>How do I restore a purchase?</summary><p>Open More › Restore purchases while signed in to the Google account that bought it.</p></details>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 FightTech · Calmly: Color by Number</span>
+<nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="https://github.com/trunghieuvn">GitHub</a></nav></div></footer>
+</body></html>
