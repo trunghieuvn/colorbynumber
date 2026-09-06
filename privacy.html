@@ -11,10 +11,10 @@
 
 <h2>2. Data collected automatically</h2>
 <table><tr><th>Data</th><th>Purpose</th><th>Processor</th></tr>
-<tr><td>Anonymous usage events (screens opened, picture started/finished, hint used, purchase started) with a random install identifier</td><td>Understand which features are used and improve the app (analytics)</td><td>Google Firebase Analytics</td></tr>
+<tr><td>Anonymous usage events (screens opened, picture started/finished, hint used, purchase started) with a random install identifier and, on Android, the device's Advertising ID</td><td>Understand which features are used and improve the app (analytics)</td><td>Google Firebase Analytics</td></tr>
 <tr><td>Crash reports: stack trace, device model, OS version, app version, free memory, the screen you were on</td><td>Find and fix crashes (app stability)</td><td>Google Firebase Crashlytics</td></tr>
 <tr><td>Purchase tokens and product IDs</td><td>Deliver and restore Premium</td><td>Google Play Billing</td></tr></table>
-<p>The install identifier is a random UUID created by the app. It is not linked to your Google account, advertising ID or any personal information, and it is reset when you uninstall the app. Analytics data is retained by Firebase for up to 14 months.</p>
+<p>The install identifier is a random UUID created by the app. It is not linked to your Google account or any personal information, and it is reset when you uninstall the app. On Android, Firebase may additionally collect the device's Advertising ID (a resettable identifier you control in Android Settings › Privacy › Ads) together with the analytics events; we use it only for analytics, not for advertising. Analytics data is retained by Firebase for up to 14 months.</p>
 
 <h2>3. Permissions</h2>
 <ul><li><b>Vibrate</b> - haptic tick when a region fills (can be switched off in More).</li>
