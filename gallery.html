@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calmly Art Library · Raw to Coloured Preview</title>
+<meta name="description" content="Browse every Calmly, Pixelo and Colorio artwork from raw numbered preview to finished colour art.">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-192.png" alt=""><span>Calmly Art Library</span></a>
+    <a class="back" href="index.html">Back to product site <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <div>
+      <p class="eyebrow">CONTENT PREVIEW · RAW → FINISHED</p>
+      <h1>See every piece<br><span>come to life.</span></h1>
+      <p class="lede">A visual QA shelf for the product library. The numbered state is on the left; the finished artwork is on the right.</p>
+    </div>
+    <div class="intro-stat"><strong id="total-count">—</strong><span>artworks across<br>all products</span></div>
+  </section>
+
+  <section class="controls" aria-label="Gallery filters">
+    <div class="products" id="products" role="tablist" aria-label="Product filter"></div>
+    <div class="filter-row">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search artwork or category" autocomplete="off"></label>
+      <label class="category"><span>Category</span><select id="category"><option value="all">All categories</option></select></label>
+    </div>
+    <p class="result-count" id="result-count"></p>
+  </section>
+
+  <section class="gallery" id="gallery" aria-live="polite"></section>
+  <p class="empty" id="empty" hidden>No artwork matches that filter.</p>
+</main>
+
+<footer><div class="wrap"><span>Original product art · raw state is generated from the same content payloads as the apps.</span><a href="index.html">Calmly</a></div></footer>
+<script src="gallery.js"></script>
+</body>
+</html>
+

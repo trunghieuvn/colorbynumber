@@ -1,0 +1,13 @@
+/* Pixelo: Pixel Art Coloring - brand tokens layered over ../style.css */
+:root{--cream:#12131A;--cream2:#1B1D27;--ink:#F2F4FF;--ink2:#9AA0BF;--line:#2A2D3C;
+  --coral:#FF5DA2;--coral2:#FF7EB6;--teal:#3DDC97;--lilac:#8B7BFF;--gold:#FFC93C;
+  --rose:#FF7EB6;--sky:#5ED4F3}
+header{background:rgba(18,19,26,.85)}
+.card,.plan,.chips span,.faq details{background:#1B1D27}
+.btn.coral{box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.shots img{box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.phone img{border-color:#232635;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.doc p,.doc li{color:var(--ink)}
+.doc a{color:var(--coral)}
+.blob{background:radial-gradient(circle at 30% 30%,#FF5DA255,transparent 60%),
+  radial-gradient(circle at 70% 70%,#8B7BFF44,transparent 60%)}
