@@ -1,0 +1,100 @@
+/* Pixel Quest: Color by Number - brand tokens layered over ../style.css
+   Fantasy RPG: parchment page, night-blue and emerald, gold trim, Cinzel headings.
+   Text colours are >= 4.5:1 on the #F7EEDC page: soft text #6A5A44, emerald #1F7A5A,
+   night blue #1E3A5F. The flavor's gold #B8801A is 3:1, so it is used only for trim. */
+:root{--cream:#F7EEDC;--cream2:#EEDFC2;--ink:#2E2418;--ink2:#6A5A44;--line:#E3D2B2;
+  --coral:#1F7A5A;--coral2:#1F7A5A;--emerald-dark:#13523C;--night:#1E3A5F;
+  --teal:#2A8C82;--lilac:#6E4FB8;--gold:#B8801A;--gold-text:#8A5F10;--sky:#3A6FB4;--rose:#B23E5E;
+  --card:#FFFBF2;
+  --p1:#E2EFE6;--p2:#F4E3C0;--p3:#E0E8F4;--p4:#F2DDE2;--p5:#E8E1F4;--p6:#DDEEEA;
+  color-scheme:light}
+html,body{overflow-x:hidden}
+body{background:var(--cream)}
+a{color:var(--coral)}
+h1,h2,.doc h1,.doc h2,header b,.plan h3{font-family:Cinzel,Georgia,"Times New Roman",serif;letter-spacing:.2px}
+header{background:rgba(247,238,220,.92)}
+header .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+header .brand:hover{text-decoration:none}
+header .mark{width:36px;height:36px;flex:none;display:block}
+header b{color:var(--night);font-weight:800}
+header nav a{color:var(--ink2)}
+header nav a:hover{color:var(--coral)}
+
+/* Call to action: emerald face, darker "pressed" edge, a thin gold trim. */
+.btn.coral{background:var(--coral);border:2px solid #C99A3C;box-shadow:0 5px 0 var(--emerald-dark),0 12px 26px rgba(31,122,90,.22)}
+.btn.coral:hover{transform:translateY(-2px)}
+.btn.coral:active{transform:translateY(2px);box-shadow:0 2px 0 var(--emerald-dark)}
+
+.hero h1{font-weight:800;color:var(--night)}
+.hero h1 span{background:linear-gradient(135deg,var(--coral),var(--night));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--ink2)}
+
+/* Hero illustration: inline SVG, so the page works before any screenshot exists. */
+.stage{justify-self:center;position:relative;width:320px;max-width:100%}
+.stage .frame{position:relative;background:var(--card);border:3px solid var(--gold);border-radius:22px;padding:12px;
+  box-shadow:0 0 0 4px var(--card),0 0 0 6px var(--night),0 12px 0 6px rgba(30,58,95,.18),0 30px 60px rgba(30,58,95,.20)}
+.stage .art{display:block;width:100%;height:auto}
+.stage .sticker{position:absolute;font-weight:900;font-size:14px;padding:8px 12px;border-radius:10px;
+  border:2px solid var(--gold);box-shadow:0 4px 0 rgba(46,36,24,.12);white-space:nowrap}
+.stage .s1{top:-18px;left:-18px;background:var(--night);color:#F7EEDC;transform:rotate(-6deg)}
+.stage .s2{bottom:52px;right:-22px;background:var(--card);color:var(--ink);transform:rotate(5deg)}
+.blob{background:radial-gradient(circle at 30% 30%,rgba(30,58,95,.20),transparent 60%),
+  radial-gradient(circle at 75% 70%,rgba(31,122,90,.18),transparent 60%),
+  radial-gradient(circle at 60% 20%,rgba(184,128,26,.22),transparent 55%)}
+
+.chips span{background:var(--card);border-color:var(--line);box-shadow:0 3px 0 #E6D5B4}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 0 #E6D5B4}
+.card .ic{border-radius:12px;border:1px solid var(--line)}
+.card h3{color:var(--night)}
+.card p{color:var(--ink2)}
+.sub{color:var(--ink2)}
+section > h2{color:var(--night)}
+
+.shots img{border:6px solid var(--card);box-shadow:0 8px 0 #E6D5B4,0 18px 36px rgba(30,58,95,.14)}
+.plan{background:var(--card);border-color:var(--line);border-radius:18px}
+.plan.best{border-color:var(--gold);box-shadow:0 6px 0 #EBD7A8}
+.plan .tag{background:var(--night);color:#F7EEDC}
+.plan .price{font-size:34px;line-height:1.2}
+.plan h3{color:var(--night)}
+.plan ul{list-style:none;padding:0;margin:10px 0 0;color:var(--ink2);font-size:14px}
+.plan li{margin:4px 0}
+
+.faq details{background:var(--card);border-color:var(--line)}
+.faq summary{color:var(--ink)}
+.faq p{color:var(--ink2)}
+
+.doc p,.doc li{color:#3A2E20}
+.doc a{color:var(--coral);text-decoration:underline;text-underline-offset:2px}
+.doc th{background:var(--cream2)}
+.doc table{background:var(--card);border-radius:12px}
+.doc td,.doc th{overflow-wrap:break-word}
+.doc code{overflow-wrap:anywhere}
+.doc .note{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;padding:14px 16px;margin:18px 0}
+.doc .note p{margin:0}
+.doc h1{color:var(--night)}
+.doc h2{color:var(--night)}
+.doc h3{font-size:18px;margin:20px 0 6px}
+
+footer{color:var(--ink2)}
+footer nav a{color:var(--coral)}
+
+@media(max-width:820px){
+  header nav{display:flex;gap:14px;font-size:14px}
+  .stage{order:-1;width:270px}
+  .stage .s1{left:-6px}
+  .stage .s2{right:-6px}
+}
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  .doc{padding:36px 16px 64px}
+  .doc h1{font-size:30px}
+  h2{font-size:26px}
+  .hero{padding-top:28px}
+  .hero p{font-size:17px}
+  header b{font-size:16px}
+  header nav{gap:12px;font-size:13px}
+  .doc table{font-size:14px}
+  .doc td,.doc th{padding:7px 8px}
+  footer nav{margin-left:0;flex-wrap:wrap}
+}
+@media(max-width:350px){header nav{display:none}}

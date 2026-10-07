@@ -1,0 +1,104 @@
+/* Bit Pals: 8-bit Coloring - brand tokens layered over ../style.css
+   Retro arcade at night: deep night-purple page, neon teal / red / gold accents, chunky
+   pixel headings. A dark page: every text colour is >= 4.5:1 on #0E0B26 and on the #18143A cards. */
+:root{--cream:#0E0B26;--cream2:#18143A;--ink:#FFF6E0;--ink2:#A9A2D6;--line:#2B2560;
+  --coral:#FF4D5E;--coral2:#FF4D5E;--coral-dark:#B3233A;
+  --teal:#2EE6A6;--lilac:#9D7CFF;--gold:#FFD23F;--sky:#3FC5FF;--rose:#FF6FB5;--ground:#2B1B6B;
+  --card:#18143A;--card-edge:#070516;
+  --p1:rgba(46,230,166,.18);--p2:rgba(63,197,255,.18);--p3:rgba(255,210,63,.18);
+  --p4:rgba(255,77,94,.20);--p5:rgba(157,124,255,.22);--p6:rgba(255,111,181,.20);
+  color-scheme:dark}
+html,body{overflow-x:hidden}
+body{background:var(--cream);color:var(--ink)}
+a{color:var(--teal)}
+h1,h2,.doc h1,.doc h2,header b,.plan h3,.card h3{font-family:"Pixelify Sans",Nunito,ui-rounded,system-ui,sans-serif;letter-spacing:0}
+header{background:rgba(14,11,38,.88);border-bottom-color:var(--line)}
+header .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+header .brand:hover{text-decoration:none}
+header .mark{width:36px;height:36px;flex:none;display:block}
+header b{color:var(--gold)}
+header nav a{color:var(--ink2)}
+header nav a:hover{color:var(--teal)}
+
+/* Arcade button: red face, dark "pressed" edge. Dark label: white on #FF4D5E is only 3.2:1. */
+.btn.coral{background:var(--coral);color:#0E0B26!important;box-shadow:0 5px 0 var(--coral-dark),0 0 26px rgba(255,77,94,.35)}
+.btn.coral:hover{transform:translateY(-2px)}
+.btn.coral:active{transform:translateY(2px);box-shadow:0 2px 0 var(--coral-dark)}
+
+h2{line-height:1.2}
+.hero h1{font-weight:700}
+.hero h1 span{background:linear-gradient(135deg,var(--teal),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--ink2)}
+.badges small{color:var(--ink2)}
+
+/* Hero illustration: inline SVG, so the page works before any screenshot exists. */
+.stage{justify-self:center;position:relative;width:320px;max-width:100%}
+.stage .frame{position:relative;background:var(--card);border:2px solid var(--line);border-radius:28px;padding:14px;
+  box-shadow:0 10px 0 var(--card-edge),0 0 60px rgba(157,124,255,.30)}
+.stage .art{display:block;width:100%;height:auto}
+.stage .sticker{position:absolute;font-weight:900;font-size:14px;padding:8px 12px;border-radius:10px;
+  box-shadow:0 4px 0 rgba(0,0,0,.35);white-space:nowrap;color:#0E0B26}
+.stage .s1{top:-14px;left:-18px;background:var(--gold);transform:rotate(-6deg)}
+.stage .s2{bottom:52px;right:-22px;background:var(--teal);transform:rotate(5deg)}
+.blob{background:radial-gradient(circle at 30% 30%,rgba(157,124,255,.35),transparent 60%),
+  radial-gradient(circle at 75% 70%,rgba(46,230,166,.22),transparent 60%),
+  radial-gradient(circle at 60% 20%,rgba(255,77,94,.20),transparent 55%)}
+
+.chips span{background:var(--card);border-color:var(--line);color:var(--ink);box-shadow:0 3px 0 var(--card-edge)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 0 var(--card-edge)}
+.card .ic{border-radius:10px}
+.card h3{font-weight:700;color:var(--ink)}
+.card p{color:var(--ink2)}
+.sub{color:var(--ink2)}
+
+.shots img{border:6px solid var(--card);box-shadow:0 8px 0 var(--card-edge),0 0 36px rgba(157,124,255,.25)}
+.plan{background:var(--card);border-color:var(--line);border-radius:18px}
+.plan.best{border-color:var(--gold);box-shadow:0 6px 0 var(--card-edge),0 0 26px rgba(255,210,63,.18)}
+.plan .tag{background:var(--gold);color:#0E0B26}
+.plan .price{font-size:34px;line-height:1.2}
+.plan h3{color:var(--teal);font-weight:700}
+.plan ul{list-style:none;padding:0;margin:10px 0 0;color:var(--ink2);font-size:14px}
+.plan li{margin:4px 0}
+
+.faq details{background:var(--card);border-color:var(--line)}
+.faq summary{color:var(--ink)}
+.faq p{color:var(--ink2)}
+
+.doc p,.doc li{color:#E4DEF7}
+.doc .meta{color:var(--ink2)}
+.doc a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+.doc b,.doc strong{color:var(--ink)}
+.doc code{color:var(--gold);overflow-wrap:anywhere}
+.doc th{background:var(--card);color:var(--ink)}
+.doc td{color:#E4DEF7}
+.doc table{background:#120F30;border-radius:12px}
+.doc td,.doc th{border-color:var(--line);overflow-wrap:break-word}
+.doc .note{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:14px 16px;margin:18px 0}
+.doc .note p{margin:0}
+.doc h1{font-weight:700}
+.doc h2{color:var(--gold);font-weight:700}
+.doc h3{font-size:18px;margin:20px 0 6px;color:var(--ink)}
+
+footer{color:var(--ink2);border-top-color:var(--line)}
+footer nav a{color:var(--teal)}
+
+@media(max-width:820px){
+  header nav{display:flex;gap:14px;font-size:14px}
+  .stage{order:-1;width:270px}
+  .stage .s1{left:-6px}
+  .stage .s2{right:-6px}
+}
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  .doc{padding:36px 16px 64px}
+  .doc h1{font-size:32px}
+  h2{font-size:28px}
+  .hero{padding-top:28px}
+  .hero p{font-size:17px}
+  header b{font-size:16px}
+  header nav{gap:12px;font-size:13px}
+  .doc table{font-size:14px}
+  .doc td,.doc th{padding:7px 8px}
+  footer nav{margin-left:0;flex-wrap:wrap}
+}
+@media(max-width:350px){header nav{display:none}}
